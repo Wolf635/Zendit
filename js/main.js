@@ -7,3 +7,5 @@ $(document).ready(function () {
     $(this).toggleClass('active').next().slideToggle(300);
   });
 });
+var scene = document.getElementById('parralax');
+var parallaxInstance = new Parallax(parralax);

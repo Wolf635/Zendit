@@ -118,7 +118,6 @@ $gray: #7d7d7d;
   }
   &__text {
     max-width: 688px;
-    border: 2px solid green;
   }
   &__content--gray {
     margin-top: 200px;
@@ -150,8 +149,38 @@ $gray: #7d7d7d;
     object-fit: cover;
   }
   &1 {
-    margin: 51% 0 0 -27.4%;
+    margin: 58% 0 0 -30%;
     width: 240px;
     max-height: 240px;
+  }
+  &2 {
+    margin: -0.1% 0 0 59%;
+    width: 175px;
+    max-height: 306px;
+  }
+  &3 {
+    margin: -42% 0 0 -17%;
+    max-width: 533px;
+    max-height: 797px;
+  }
+  &4 {
+    margin: 76% 0 0 79%;
+    width: 95.3px;
+    height: 95.3px;
+  }
+  &5 {
+    margin: 9% 0 0 89%;
+    width: 95.3px;
+    height: 95.3px;
+  }
+  &6 {
+    margin: -15% 0 0 75%;
+    width: 39px;
+    height: 39px;
+  }
+  &7 {
+    margin: 0.1% 0 0 -16%;
+    width: 95.3px;
+    height: 95.3px;
   }
 }

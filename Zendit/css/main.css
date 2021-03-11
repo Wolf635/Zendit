@@ -345,7 +345,6 @@ body {
 
 .header__text {
   max-width: 688px;
-  border: 2px solid green;
 }
 
 .header__content--gray {
@@ -390,9 +389,45 @@ body {
 }
 
 .item1 {
-  margin: 41% 0 0 -111%;
+  margin: 58% 0 0 -30%;
   width: 240px;
   max-height: 240px;
+}
+
+.item2 {
+  margin: -0.1% 0 0 59%;
+  width: 175px;
+  max-height: 306px;
+}
+
+.item3 {
+  margin: -42% 0 0 -17%;
+  max-width: 533px;
+  max-height: 797px;
+}
+
+.item4 {
+  margin: 76% 0 0 79%;
+  width: 95.3px;
+  height: 95.3px;
+}
+
+.item5 {
+  margin: 9% 0 0 89%;
+  width: 95.3px;
+  height: 95.3px;
+}
+
+.item6 {
+  margin: -15% 0 0 75%;
+  width: 39px;
+  height: 39px;
+}
+
+.item7 {
+  margin: 0.1% 0 0 -16%;
+  width: 95.3px;
+  height: 95.3px;
 }
 
 /* @import "popup.scss"; */
