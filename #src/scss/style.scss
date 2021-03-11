@@ -27,22 +27,25 @@ $gray: #7d7d7d;
 }
 .nav {
   display: flex;
-  margin-left: 106px;
+  margin-left: 120px;
   padding-top: 11.8px;
   &__wrap {
     display: flex;
-    border: 1px solid red;
+    li:first-child {
+      /* Первый элемент списка */
+      margin-left: 0;
+    }
   }
   &__item {
     list-style: none;
     padding: 0px 28px;
+    margin-left: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
     position: relative;
     a {
       color: $blau;
-      border: 1px solid green;
     }
     &::before,
     &::after {
@@ -105,12 +108,12 @@ $gray: #7d7d7d;
   &__body {
     display: flex;
     flex-direction: column;
+    max-width: 684px;
   }
 }
 .header {
   &__title {
     display: flex;
-    max-width: 82%;
     margin-bottom: 50px;
   }
   &__text {
@@ -125,15 +128,29 @@ $gray: #7d7d7d;
   font-size: 30px;
   line-height: 45px;
   color: $gray;
+  margin-bottom: 230px;
 }
 .parralax {
-  max-width: 33%;
+  max-width: 40%;
   margin-left: auto;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
 }
 .item {
   max-width: 788px;
+  height: 335px;
+  margin-right: -142px;
   img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  &1 {
+    margin: 41% 0 0 -24%;
+    width: 240px;
+    max-height: 240px;
   }
 }
