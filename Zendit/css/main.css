@@ -345,6 +345,7 @@ body {
 
 .header__text {
   max-width: 688px;
+  border: 2px solid green;
 }
 
 .header__content--gray {
@@ -358,7 +359,7 @@ body {
   font-size: 30px;
   line-height: 45px;
   color: #7d7d7d;
-  margin-bottom: 230px;
+  margin-bottom: 240px;
 }
 
 .parralax {
@@ -375,8 +376,8 @@ body {
 
 .item {
   max-width: 788px;
-  height: 335px;
-  margin-right: -142px;
+  max-height: 335px;
+  margin-right: -216.6px;
 }
 
 .item img {
@@ -389,7 +390,7 @@ body {
 }
 
 .item1 {
-  margin: 41% 0 0 -24%;
+  margin: 41% 0 0 -111%;
   width: 240px;
   max-height: 240px;
 }
