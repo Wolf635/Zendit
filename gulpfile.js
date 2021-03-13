@@ -1,8 +1,26 @@
+let { src, dest } = require('gulp');
+let fs = require('fs');
+let gulp = require('gulp');
+let browsersync = require("browser-sync").create();
+let fileinclude = require("gulp-file-include");
+let del = require("del");
+let scss = require("gulp-sass");
+let autoprefixer = require("gulp-autoprefixer");
+let group_media = require("gulp-group-css-media-queries");
+let clean_css = require("gulp-clean-css");
+let rename = require("gulp-rename");
+let uglify = require("gulp-uglify-es").default;
+let imagemin = require("gulp-imagemin");
+let webp = require('gulp-webp');
+let webphtml = require('gulp-webp-html');
+let webpcss = require("gulp-webpcss");
+let svgSprite = require('gulp-svg-sprite');
+let ttf2woff = require('gulp-ttf2woff');
+let ttf2woff2 = require('gulp-ttf2woff2');
+let fonter = require('gulp-fonter');
 
 let project_folder = require("path").basename(__dirname);
 let source_folder = "#src";
-
-let fs = require('fs');
 
 let path = {
 	build: {
@@ -10,7 +28,7 @@ let path = {
 		css: project_folder + "/css/",
 		js: project_folder + "/js/",
 		img: project_folder + "/img/",
-		fonts: project_folder + "/fonts/",
+		fonts: project_folder + "/fonts/"
 	},
 	src: {
 		html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
@@ -27,26 +45,6 @@ let path = {
 	},
 	clean: "./" + project_folder + "/"
 }
-
-let { src, dest } = require('gulp'),
-	gulp = require('gulp'),
-	browsersync = require("browser-sync").create(),
-	fileinclude = require("gulp-file-include"),
-	del = require("del"),
-	scss = require("gulp-sass"),
-	autoprefixer = require("gulp-autoprefixer"),
-	group_media = require("gulp-group-css-media-queries"),
-	clean_css = require("gulp-clean-css"),
-	rename = require("gulp-rename"),
-	uglify = require("gulp-uglify-es").default,
-	imagemin = require("gulp-imagemin"),
-	webp = require('gulp-webp'),
-	webphtml = require('gulp-webp-html'),
-	webpcss = require("gulp-webpcss"),
-	svgSprite = require('gulp-svg-sprite'),
-	ttf2woff = require('gulp-ttf2woff'),
-	ttf2woff2 = require('gulp-ttf2woff2'),
-	fonter = require('gulp-fonter');
 
 function browserSync(params) {
 	browsersync.init({
@@ -133,6 +131,7 @@ function images() {
 		.pipe(browsersync.stream())
 }
 
+
 function fonts() {
 	src(path.src.fonts)
 		.pipe(ttf2woff())
@@ -208,6 +207,7 @@ exports.images = images;
 exports.js = js;
 exports.css = css;
 exports.html = html;
+exports.clean = clean; // добавил 
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
