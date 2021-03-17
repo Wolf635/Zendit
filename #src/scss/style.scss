@@ -19,16 +19,26 @@ $gray: #7d7d7d;
   display: flex;
   &__entrance {
     margin-right: 50px;
+    @media (max-width: 1209px) {
+      margin-right: 20px;
+    }
   }
   &__logo {
     display: flex;
     align-items: center;
   }
 }
+
 .nav {
   display: flex;
   margin-left: 120px;
-  padding-top: 11.8px;
+  align-items: center;
+  @media (max-width: 1295px) {
+    margin-left: 40px;
+  }
+  @media (max-width: 1090px) {
+    display: none;
+  }
   &__wrap {
     display: flex;
     li:first-child {
@@ -44,6 +54,9 @@ $gray: #7d7d7d;
     font-weight: 400;
     line-height: 30px;
     position: relative;
+    @media (max-width: 1295px) {
+      margin-left: 0px;
+    }
     a {
       color: $blau;
     }
@@ -95,6 +108,9 @@ $gray: #7d7d7d;
   margin-left: auto;
   display: flex;
   align-items: center;
+  @media (max-width: 1090px) {
+    display: none;
+  }
   a {
     color: $blau;
   }
@@ -150,37 +166,37 @@ $gray: #7d7d7d;
     object-fit: cover;
   }
   &1 {
-    margin: 58% 0 0 -30%;
+    margin: 45% 0 0 -24%;
     width: 240px;
     max-height: 240px;
   }
   &2 {
-    margin: -0.1% 0 0 59%;
+    margin: -2.2% 0 0 50%;
     width: 175px;
     max-height: 306px;
   }
   &3 {
-    margin: -42% 0 0 -17%;
+    margin: -35% 0 0 -17%;
     max-width: 533px;
     max-height: 797px;
   }
   &4 {
-    margin: 76% 0 0 79%;
+    margin: 60% 0 0 63%;
     width: 95.3px;
     height: 95.3px;
   }
   &5 {
-    margin: 9% 0 0 89%;
+    margin: 8% 0 0 73%;
     width: 95.3px;
     height: 95.3px;
   }
   &6 {
-    margin: -15% 0 0 75%;
+    margin: -10% 0 0 62%;
     width: 39px;
     height: 39px;
   }
   &7 {
-    margin: 0.1% 0 0 -16%;
+    margin: 0.4% 0 0 -24%;
     width: 95.3px;
     height: 95.3px;
   }

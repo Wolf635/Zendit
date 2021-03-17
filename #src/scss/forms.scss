@@ -1,12 +1,23 @@
-.menu__registration {
-	padding: 13.5px 25.8px;
+.btn {
+	/* menu__button */
+	padding: 0 25.8px; // Стандарное
 	border-radius: 5px;
-	background-color: trancparent;
+	height: 49px;
+	font-size: 20px;
+	color: #172f53;
+	line-height: 30 / 20 * 100%; // По способу Жени
+	display: inline-flex; // Стандарное
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+	background-color: transparent;
 	border: 1px solid #000;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-	font-size: 20px;
-	&:hover {
-		background-color: #ccc;
-		transition: all 0.3s ease 0s;
+	@media (min-width: 992px) {
+		// Стандарное
+		&:hover {
+			background-color: #ccc;
+		}
 	}
 }
