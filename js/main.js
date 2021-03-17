@@ -8,8 +8,6 @@ $(document).ready(function () {
   });
 });
 var scene = document.getElementById('parralax');
-<<<<<<< HEAD
 var parallaxInstance = new Parallax(parralax);
-=======
-var parallaxInstance = new Parallax(parralax);
->>>>>>> 6303e655ccfd6e5711db60a2c6a2aabeefe13dc3
+
+
