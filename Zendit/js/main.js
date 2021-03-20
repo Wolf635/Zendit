@@ -8,5 +8,11 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $('.menu__burger').click(function (event) {
+    $('.menu__burger, .menu__nav').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+});
 var scene = document.getElementById('parralax');
 var parallaxInstance = new Parallax(parralax);
