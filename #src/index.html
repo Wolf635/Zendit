@@ -6,68 +6,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.min.css">
-  <!--  <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <title>Document</title>
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="menu">
-        <div class="logo menu__logo">
-          <a href="index.html"><img src="img/header/logo.svg" alt="Логотип"></a>
-          <div class="logo__title">Zendit</div>
-        </div>
-        <div class="menu__burger">
-          <span></span>
-        </div>
-        <nav class="nav menu__nav block one">
-          <ul class="nav__wrap">
-
-            <li class="nav__item"><a href="#">Shipping</a>
-              <ul class="nav__list">
-                <li class="nav__item--text">
-                  <a href="https://www.russianfood.com/recipes/recipe.php?rid=121599" target="_blank">lorem1</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav__item"><a href="#">Tracking</a>
-              <ul class="nav__list">
-                <li class="nav__list--item">
-                  <a class="nav__item--text" href="https://www.russianfood.com/recipes/recipe.php?rid=8914"
-                    target="_blank">lorem2</a>
-                </li>
-
-              </ul>
-            </li>
-            <li class="nav__item"><a href="#">Support</a>
-              <ul class="nav__list">
-                <li class="nav__list--item">
-                  <a class="nav__item--text" href="https://www.russianfood.com/recipes/recipe.php?rid=121599"
-                    target="_blank">lorem3</a>
-                </li>
-
-              </ul>
-            </li>
-            <li class="nav__item"><a href="#">Account</a>
-              <ul class="nav__list">
-                <li class="nav__list--item">
-                  <a class="nav__item--text" href="https://www.russianfood.com/recipes/recipe.php?rid=121599"
-                    target="_blank">lorem4</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-
-        </nav>
-        <div class="contacts menu__contacts">
-          <a class="menu__entrance" href="https://www.google.ru/" target="_blank">Sign In</a>
-          <a class="menu__button btn" href="#">Register</a>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <div class="logo header__logo">
+            <a href="index.html"><img src="img/header/logo.svg" alt="Логотип"></a>
+            <div class="logo__title">Zendit</div>
+          </div>
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <nav class=" header__menu menu block one">
+            <ul class="header__list">
+              <!-- Делал по совету людей и по БЭМ -->
+              <li class="header__item"><a class="header__link" href="#">Shipping</a></li>
+              <li class="header__item header__item-text"><a class="header__link" href="#">lorem1</a></li>
+              <li class="header__item"><a class="header__link" href="#">Tracking</a></li>
+              <li class="header__item header__ltem-text"><a class="header__link" href="#">lorem2</a></li>
+              <li class="header__item"><a class="header__link" href="#">Support</a></li>
+              <li class="header__item header__ltem-text"><a class="header__link" href="#">lorem3</a></li>
+              <li class="header__item"><a class="header__link" href="#">Account</a></li>
+              <li class="header__item header__ltem-text"><a class="header__link" href="#">lorem4</a></li>
+            </ul>
+          </nav>
+          <div class="contacts menu__contacts">
+            <a class="menu__entrance" href="https://www.google.ru/" target="_blank">Sign In</a>
+            <a class="menu__button btn" href="#">Register</a>
+          </div>
         </div>
       </div>
+
       <!-- <div class="header__content header__content--gray">
         <div class="title__body">
           <div class="title header__title">Sends goods more easily and quickly</div>
@@ -86,8 +60,10 @@
           <div class="item item7" data-depth="0.65"><img src="img/header/06.png" alt=""></div>
         </div>
       </div> -->
-    </div>
-  </header>
+    </header>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="js/main.js"></script>
 </body>

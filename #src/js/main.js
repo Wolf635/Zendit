@@ -1,16 +1,16 @@
 $(document).ready(function () {
-  $('.nav__item').click(function (event) {
+  $('.header__link').click(function (event) {
     if ($('.block').hasClass('one')) {
-      $(".nav__item").not($(this)).removeClass('active');
-      $(".nav__item--text").not($(this).next()).slideUp(300);
+      $(".header__link").not($(this)).removeClass('active');
+      $(".header__link-text").not($(this).next()).slideUp(300);
     }
     $(this).toggleClass('active').next().slideToggle(300);
   });
 });
 
 $(document).ready(function () {
-  $('.menu__burger').click(function (event) {
-    $('.menu__burger, .menu__nav').toggleClass('active');
+  $('.header__burger').click(function (event) {
+    $('.header__burger, .header__menu').toggleClass('active');
     $('body').toggleClass('lock');
   });
 });
